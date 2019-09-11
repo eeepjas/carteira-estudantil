@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Carteira do Estudante EEEP</title>
     <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    
     <style>
         body.container{
             margin: 0;
@@ -207,6 +208,17 @@
             padding: 2px;
             display: block;
         }
+
+        body article .imprimir{
+            width: 200px;
+            height: 50px;
+            background-color: rgb(238, 89, 89);
+            color: #fff;
+            border-radius: 20px;
+            text-align: center;
+            margin-left: 350px;
+            cursor:pointer;
+        }
     </style>
 </head>
 <body class="container">
@@ -234,73 +246,6 @@
                 </div>
             </div>
             <div class="cartao direito">
-                <img src="./imagens/./imagens/governo do estado.png" alt="governo do estado do Ceará.">
-                <p>
-                    <span>documento de identificação estudantil</span>
-                    <span>eeep dr. josé alves da silveira</span>
-                </p>
-                <div class="container-informs">
-                    <div class="informs">
-                        <div class="tri-input">
-                            <label class="first-label">
-                                <span>Nome do(a) Aluno(a):</span>
-                                <input type="text" value="Emanuel Pereira dos Santos" disabled>
-                            </label>
-                            <div>
-                                <label>
-                                    <span>Nº da Matrícula:</span>
-                                    <input type="text" value="74117716" disabled>
-                                </label>
-                                <label>
-                                    <span>Nº do CPF:</span>
-                                    <input type="text" value="030.047.023-12" disabled>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="tri-input">
-                            <label class="first-label">
-                                <span>Curso:</span>
-                                <input type="text" value="Técnico em Nutrição e Dietética" disabled>
-                            </label>
-                            <div>
-                                <label>
-                                    <span>Série:</span>
-                                    <input type="text" value="2º ano 'D'" disabled>
-                                </label>
-                                <label>
-                                    <span>Turno:</span>
-                                    <input type="text" value="Integral" disabled>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="img-aluno"><img src="img/user.png" alt="aluno"></div>
-                </div>
-            </div>
-        </div>
-        <div class="cartao-container">
-            <div class="cartao esquerdo">
-                <p> 
-                    <span> Av. Humberto Sena, nº 250 - Distrito Industrial </span>
-                    <span> Quixeramobim - Ceará - CEP: 63.800-000 </span>
-                    <span> Tel.: (88) 3441.3170 </span>
-                </p>
-                <div>
-                    <label>Assinatura do(a) Aluno(a)</label>
-                    <label>
-                        <span> Válido até: </span>
-                        <input type="text" value="01 de Janeiro de 2020" disabled>
-                    </label>
-                </div>
-                <div>
-                    <label>Assinatura do(a) Diretor(a)</label>
-                    <label>
-                        <span> Código de uso: </span>
-                        <input type="text" value="0000000000000" disabled>
-                    </label>
-                </div>
-            </div>
-            <div class="cartao direito">
                 <img src="./imagens/governo do estado.png" alt="governo do estado do Ceará.">
                 <p>
                     <span>documento de identificação estudantil</span>
@@ -479,12 +424,81 @@
                 </div>
             </div>
         </div>
+        <div class="cartao-container">
+            <div class="cartao esquerdo">
+                <p> 
+                    <span> Av. Humberto Sena, nº 250 - Distrito Industrial </span>
+                    <span> Quixeramobim - Ceará - CEP: 63.800-000 </span>
+                    <span> Tel.: (88) 3441.3170 </span>
+                </p>
+                <div>
+                    <label>Assinatura do(a) Aluno(a)</label>
+                    <label>
+                        <span> Válido até: </span>
+                        <input type="text" value="01 de Janeiro de 2020" disabled>
+                    </label>
+                </div>
+                <div>
+                    <label>Assinatura do(a) Diretor(a)</label>
+                    <label>
+                        <span> Código de uso: </span>
+                        <input type="text" value="0000000000000" disabled>
+                    </label>
+                </div>
+            </div>
+            <div class="cartao direito">
+                <img src="./imagens/governo do estado.png" alt="governo do estado do Ceará.">
+                <p>
+                    <span>documento de identificação estudantil</span>
+                    <span>eeep dr. josé alves da silveira</span>
+                </p>
+                <div class="container-informs">
+                    <div class="informs">
+                        <div class="tri-input">
+                            <label class="first-label">
+                                <span>Nome do(a) Aluno(a):</span>
+                                <input type="text" value="Emanuel Pereira dos Santos" disabled>
+                            </label>
+                            <div>
+                                <label>
+                                    <span>Nº da Matrícula:</span>
+                                    <input type="text" value="74117716" disabled>
+                                </label>
+                                <label>
+                                    <span>Nº do CPF:</span>
+                                    <input type="text" value="030.047.023-12" disabled>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="tri-input">
+                            <label class="first-label">
+                                <span>Curso:</span>
+                                <input type="text" value="Técnico em Nutrição e Dietética" disabled>
+                            </label>
+                            <div>
+                                <label>
+                                    <span>Série:</span>
+                                    <input type="text" value="2º ano 'D'" disabled>
+                                </label>
+                                <label>
+                                    <span>Turno:</span>
+                                    <input type="text" value="Integral" disabled>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-aluno"><img src="img/user.png" alt="aluno"></div>
+                </div>
+            </div>
+        </div>
+        <button class="imprimir" onclick="pdf()">imprimir</button>
     </article>
+  
 </body>
 </html>
 <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.9.7/d3.min.js"></script>
 <script>
-        $(document).ready(function () {
+       function pdf() {
             window.print();
-        });
+        }
 </script>
