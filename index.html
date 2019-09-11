@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Carteira do Estudante EEEP</title>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
     <style>
         body.container{
             margin: 0;
@@ -15,7 +16,7 @@
         body article.folha-a4{
             width: 1000px;
             margin: 100px auto;
-            height: 2300px;
+            height: 1300px;
             box-shadow: 1px 2px 3px 2px rgba(0, 0, 0, .5);
             background-color: white;
             padding-top: 40px;
@@ -25,23 +26,465 @@
             width: 100%;
             display: flex;
             justify-content: center;
+            margin-bottom: 20px;
         }
 
         body article div div.cartao{
             width: 400px;
             height: 230px;
             margin: 0px;
-            background: linear-gradient(to right, rgb(12, 102, 12), rgb(81, 243, 81));
+            background: linear-gradient(to bottom, rgb(32, 146, 32), rgb(113, 248, 113), rgb(32, 146, 32));
+            border: 1px solid rgb(7, 48, 7);
             display: inline-block;
+        }
+
+        body article div div.esquerdo p{
+            width: 100%;
+            text-align: center;
+            font-family: 'Comfortaa', cursive;
+            font-weight: bold;
+            color: white;
+            font-size: 11pt;
+        }
+
+        body article div div.esquerdo p span{
+            display: block;
+        }
+
+        body article div div.esquerdo div{
+            width: 100%;
+            display: block;
+            font-family: sans-serif;
+            padding: 2px;
+        }
+
+        body article div div.esquerdo div label{
+            width: 48%;
+            display: inline-block;
+            height: 35px;
+
+        }
+
+        body article div div.esquerdo div label:nth-child(1){
+            font-size: 7pt;
+            border-top: 1px solid black;
+            text-align: center;
+        }
+
+        body article div div.esquerdo div label:nth-child(2){
+            text-align: center;
+        }
+
+        body article div div.esquerdo div label:nth-child(2) span{
+            font-size: 9pt;
+            font-weight: 600;
+            font-family: 'Comfortaa', cursive;
+            display: block;
+        }
+
+        body article div div.esquerdo div label:nth-child(2) input{
+            display: block;
+            text-align: center;
+            width: 150px;
+            margin: 0 auto;
+            color: black;
+            background-color: white;
+            border: .5px solid rgb(24, 105, 24);
+            border-radius: 3px;
+            padding: 2px;
+        }
+
+        body article div div.direito img{
+            float: left;
+            width: 35px;
+            height: 50px;
+            margin: 10px;
+        }
+
+        body article div div.direito p{
+            text-align: center;
+            font-family: 'Comfortaa', cursive;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+            text-align: left;
+        }
+
+        body article div div.direito p span{
+            display: block;
+        }
+
+        body article div div.direito p span:nth-child(1){
+            font-size: 10pt;
+            margin-bottom: 3px;
+        }
+
+        body article div div.direito p span:nth-child(2){
+            font-size: 12pt;
+        }
+
+        body article div div.direito div.container-informs{
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+        }
+
+        body article div div.direito div div{
+            height: 140px;
+            margin: 5px;
+        }
+
+        body article div div.direito div div.informs{
+            width: 70%;
+        }
+
+        body article div div.direito div div.img-aluno{
+            width: 30%;
+            border: 1px solid rgb(24, 105, 24);
+            border-radius: 3px;
+        }
+
+        body article div div.direito div div.img-aluno img{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            border-radius: 3px;
+        }
+
+        body article div div.direito div.container-informs div.informs label{
+            height: 30px;
+        }
+
+        body article div div.direito div.container-informs div.informs div.tri-input label.first-label{
+            width: 100%;
+        }
+
+        body article div div.direito div.container-informs div.informs div.tri-input label.first-label input{
+            width: 100%;
+        }
+
+        body article div div.direito div.container-informs div.informs div.tri-input{
+            height: 60px;
+        }
+
+        body article div div.direito div.container-informs div.informs div.tri-input div{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+        }
+
+        body article div div.direito div.container-informs div.informs div.tri-input div label:nth-child(1){
+            margin-right: 7px;
+        }
+
+        body article div div.direito div.container-informs div.informs div.tri-input div label{
+            width: 50%;
+            position: relative;
+        }
+
+        body article div div.direito div.container-informs div.informs div.tri-input div label input{
+            width: 100%;
+        }
+
+        body article div div.direito div.container-informs div.informs span{
+            font-family: 'Comfortaa', cursive;
+            font-size: 7pt;
+            text-indent: 3px;
+            display: block;            
+        }
+
+        body article div div.direito div.container-informs div.informs input{
+            text-align: center;
+            width: 150px;
+            color: black;
+            background-color: white;
+            border: .5px solid rgb(24, 105, 24);
+            border-radius: 3px;
+            padding: 2px;
+            display: block;
         }
     </style>
 </head>
 <body class="container">
     <article class="folha-a4">
         <div class="cartao-container">
-            <div class="cartao esquerdo"></div>
-            <div class="cartao direito"></div>
+            <div class="cartao esquerdo">
+                <p> 
+                    <span> Av. Humberto Sena, nº 250 - Distrito Industrial </span>
+                    <span> Quixeramobim - Ceará - CEP: 63.800-000 </span>
+                    <span> Tel.: (88) 3441.3170 </span>
+                </p>
+                <div>
+                    <label>Assinatura do(a) Aluno(a)</label>
+                    <label>
+                        <span> Válido até: </span>
+                        <input type="text" value="01 de Janeiro de 2020" disabled>
+                    </label>
+                </div>
+                <div>
+                    <label>Assinatura do(a) Diretor(a)</label>
+                    <label>
+                        <span> Código de uso: </span>
+                        <input type="text" value="0000000000000" disabled>
+                    </label>
+                </div>
+            </div>
+            <div class="cartao direito">
+                <img src="./imagens/./imagens/governo do estado.png" alt="governo do estado do Ceará.">
+                <p>
+                    <span>documento de identificação estudantil</span>
+                    <span>eeep dr. josé alves da silveira</span>
+                </p>
+                <div class="container-informs">
+                    <div class="informs">
+                        <div class="tri-input">
+                            <label class="first-label">
+                                <span>Nome do(a) Aluno(a):</span>
+                                <input type="text" value="Emanuel Pereira dos Santos" disabled>
+                            </label>
+                            <div>
+                                <label>
+                                    <span>Nº da Matrícula:</span>
+                                    <input type="text" value="74117716" disabled>
+                                </label>
+                                <label>
+                                    <span>Nº do CPF:</span>
+                                    <input type="text" value="030.047.023-12" disabled>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="tri-input">
+                            <label class="first-label">
+                                <span>Curso:</span>
+                                <input type="text" value="Técnico em Nutrição e Dietética" disabled>
+                            </label>
+                            <div>
+                                <label>
+                                    <span>Série:</span>
+                                    <input type="text" value="2º ano 'D'" disabled>
+                                </label>
+                                <label>
+                                    <span>Turno:</span>
+                                    <input type="text" value="Integral" disabled>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-aluno"><img src="img/user.png" alt="aluno"></div>
+                </div>
+            </div>
+        </div>
+        <div class="cartao-container">
+            <div class="cartao esquerdo">
+                <p> 
+                    <span> Av. Humberto Sena, nº 250 - Distrito Industrial </span>
+                    <span> Quixeramobim - Ceará - CEP: 63.800-000 </span>
+                    <span> Tel.: (88) 3441.3170 </span>
+                </p>
+                <div>
+                    <label>Assinatura do(a) Aluno(a)</label>
+                    <label>
+                        <span> Válido até: </span>
+                        <input type="text" value="01 de Janeiro de 2020" disabled>
+                    </label>
+                </div>
+                <div>
+                    <label>Assinatura do(a) Diretor(a)</label>
+                    <label>
+                        <span> Código de uso: </span>
+                        <input type="text" value="0000000000000" disabled>
+                    </label>
+                </div>
+            </div>
+            <div class="cartao direito">
+                <img src="./imagens/governo do estado.png" alt="governo do estado do Ceará.">
+                <p>
+                    <span>documento de identificação estudantil</span>
+                    <span>eeep dr. josé alves da silveira</span>
+                </p>
+                <div class="container-informs">
+                    <div class="informs">
+                        <div class="tri-input">
+                            <label class="first-label">
+                                <span>Nome do(a) Aluno(a):</span>
+                                <input type="text" value="Emanuel Pereira dos Santos" disabled>
+                            </label>
+                            <div>
+                                <label>
+                                    <span>Nº da Matrícula:</span>
+                                    <input type="text" value="74117716" disabled>
+                                </label>
+                                <label>
+                                    <span>Nº do CPF:</span>
+                                    <input type="text" value="030.047.023-12" disabled>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="tri-input">
+                            <label class="first-label">
+                                <span>Curso:</span>
+                                <input type="text" value="Técnico em Nutrição e Dietética" disabled>
+                            </label>
+                            <div>
+                                <label>
+                                    <span>Série:</span>
+                                    <input type="text" value="2º ano 'D'" disabled>
+                                </label>
+                                <label>
+                                    <span>Turno:</span>
+                                    <input type="text" value="Integral" disabled>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-aluno"><img src="img/user.png" alt="aluno"></div>
+                </div>
+            </div>
+        </div>
+        <div class="cartao-container">
+            <div class="cartao esquerdo">
+                <p> 
+                    <span> Av. Humberto Sena, nº 250 - Distrito Industrial </span>
+                    <span> Quixeramobim - Ceará - CEP: 63.800-000 </span>
+                    <span> Tel.: (88) 3441.3170 </span>
+                </p>
+                <div>
+                    <label>Assinatura do(a) Aluno(a)</label>
+                    <label>
+                        <span> Válido até: </span>
+                        <input type="text" value="01 de Janeiro de 2020" disabled>
+                    </label>
+                </div>
+                <div>
+                    <label>Assinatura do(a) Diretor(a)</label>
+                    <label>
+                        <span> Código de uso: </span>
+                        <input type="text" value="0000000000000" disabled>
+                    </label>
+                </div>
+            </div>
+            <div class="cartao direito">
+                <img src="./imagens/governo do estado.png" alt="governo do estado do Ceará.">
+                <p>
+                    <span>documento de identificação estudantil</span>
+                    <span>eeep dr. josé alves da silveira</span>
+                </p>
+                <div class="container-informs">
+                    <div class="informs">
+                        <div class="tri-input">
+                            <label class="first-label">
+                                <span>Nome do(a) Aluno(a):</span>
+                                <input type="text" value="Emanuel Pereira dos Santos" disabled>
+                            </label>
+                            <div>
+                                <label>
+                                    <span>Nº da Matrícula:</span>
+                                    <input type="text" value="74117716" disabled>
+                                </label>
+                                <label>
+                                    <span>Nº do CPF:</span>
+                                    <input type="text" value="030.047.023-12" disabled>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="tri-input">
+                            <label class="first-label">
+                                <span>Curso:</span>
+                                <input type="text" value="Técnico em Nutrição e Dietética" disabled>
+                            </label>
+                            <div>
+                                <label>
+                                    <span>Série:</span>
+                                    <input type="text" value="2º ano 'D'" disabled>
+                                </label>
+                                <label>
+                                    <span>Turno:</span>
+                                    <input type="text" value="Integral" disabled>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-aluno"><img src="img/user.png" alt="aluno"></div>
+                </div>
+            </div>
+        </div>
+        <div class="cartao-container">
+            <div class="cartao esquerdo">
+                <p> 
+                    <span> Av. Humberto Sena, nº 250 - Distrito Industrial </span>
+                    <span> Quixeramobim - Ceará - CEP: 63.800-000 </span>
+                    <span> Tel.: (88) 3441.3170 </span>
+                </p>
+                <div>
+                    <label>Assinatura do(a) Aluno(a)</label>
+                    <label>
+                        <span> Válido até: </span>
+                        <input type="text" value="01 de Janeiro de 2020" disabled>
+                    </label>
+                </div>
+                <div>
+                    <label>Assinatura do(a) Diretor(a)</label>
+                    <label>
+                        <span> Código de uso: </span>
+                        <input type="text" value="0000000000000" disabled>
+                    </label>
+                </div>
+            </div>
+            <div class="cartao direito">
+                <img src="./imagens/governo do estado.png" alt="governo do estado do Ceará.">
+                <p>
+                    <span>documento de identificação estudantil</span>
+                    <span>eeep dr. josé alves da silveira</span>
+                </p>
+                <div class="container-informs">
+                    <div class="informs">
+                        <div class="tri-input">
+                            <label class="first-label">
+                                <span>Nome do(a) Aluno(a):</span>
+                                <input type="text" value="Emanuel Pereira dos Santos" disabled>
+                            </label>
+                            <div>
+                                <label>
+                                    <span>Nº da Matrícula:</span>
+                                    <input type="text" value="74117716" disabled>
+                                </label>
+                                <label>
+                                    <span>Nº do CPF:</span>
+                                    <input type="text" value="030.047.023-12" disabled>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="tri-input">
+                            <label class="first-label">
+                                <span>Curso:</span>
+                                <input type="text" value="Técnico em Nutrição e Dietética" disabled>
+                            </label>
+                            <div>
+                                <label>
+                                    <span>Série:</span>
+                                    <input type="text" value="2º ano 'D'" disabled>
+                                </label>
+                                <label>
+                                    <span>Turno:</span>
+                                    <input type="text" value="Integral" disabled>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-aluno"><img src="img/user.png" alt="aluno"></div>
+                </div>
+            </div>
         </div>
     </article>
 </body>
 </html>
+<script src="https://ajax.googleapis.com/ajax/libs/d3js/5.9.7/d3.min.js"></script>
+<script>
+        $(document).ready(function () {
+            window.print();
+        });
+</script>
